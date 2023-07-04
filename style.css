@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;1,300&display=swap');
+*{
+	background: white;
+	margin: 0px;
+	font-family: Montserrat;
+}
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: white;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  background-color: transparent;
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 25px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: green;
+  color: white;
+}
+
+/* Add an active class to highlight the current page */
+.topnav a.active {
+  background-color:green;
+  color: white;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+}
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+.body-col{
+	display: flex;
+	background-image: url("image/bg1.png");
+	background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+.body-col-1 ,.body-col-2{
+	width: 50%;
+	height: 400px;
+	background-color: transparent;
+	text-align: center;
+	font-family: monospace;
+}
+.body-col-1 h1{
+	font-style: bolder;
+	text-align: center;
+	background: transparent;
+	margin-top: 30%;
+}
+.body-col-2{
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+	margin-top: 20%;
+}
+.button {
+  font-style: bolder;
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.marquee-box{
+	
+	background: green;
+	width: 100%;
+	height: 40px;
+}
+#img1{
+	width: 100%;
+	height: auto;
+}
+
+
+
+
+@media only screen and (max-width: 650px) {
+.body-col{
+	display: block;
+	background-image: url("image/bg1.png");
+	background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: contain; /* Resize the background image to cover the entire container */
+}
+.body-col-1 ,.body-col-2{
+	width: 100%;
+	height: auto;
+	background-color: transparent;
+	text-align: center;
+	font-family: monospace;
+}
+.body-col-1 h1{
+	font-size: 20px;
+	font-style: bolder;
+	text-align: center;
+	background: transparent;
+	margin-top: 20%;
+}
+.body-col-1 h2{
+	font-size: 16px;
+	background-color: transparent;
+}
+.marquee-box{
+	font-size: 10px;
+	background: green;
+	width: 100%;
+	height: 30px;
+}
+.button {
+  font-style: bolder;
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 10px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+}
+
